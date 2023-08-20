@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
-
+  final int day = 30;
+  final String name = "vaibhav";
   @override
   Widget build(BuildContext context) {
-    final int day = 30;
-    final String name = "vaibhav";
     return Scaffold(
       appBar: AppBar(
         title: Text("Catalog App"),
