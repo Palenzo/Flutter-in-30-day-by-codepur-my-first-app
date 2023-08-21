@@ -1,9 +1,10 @@
 import 'package:app1/pages/home_page.dart';
 import 'package:app1/pages/login_page.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(MeraLauda());
+  runApp(const MeraLauda());
 }
 
 class MeraLauda extends StatelessWidget {
@@ -14,13 +15,13 @@ class MeraLauda extends StatelessWidget {
     return MaterialApp(
       // Corrected capitalization of "HomePage"
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: ThemeData(primarySwatch: Colors.deepPurple,fontFamily: GoogleFonts.lato().fontFamily),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: "/home",
+      initialRoute: "/login",
       routes: {
-        "/": (context) => Loginpage(),
-        "/home": (context) => Homepage(),
-        "/login": (context) => Loginpage()
+        "/": (context) => const LoginPage(),
+        "/home": (context) => const Homepage(),
+        "/login": (context) => const LoginPage()
       },
     );
   }

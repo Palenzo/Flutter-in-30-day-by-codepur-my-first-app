@@ -8,15 +8,12 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: const Text("Catalog App"),
       ),
       body: Center(
-        child: Container(
-          child: Text('Welcome to $name Lund!! $day'),
-        ),
-      ),
-      drawer: Drawer(),
+        child: Text('Welcome to the App $name in $day day'),),
+      drawer: const Drawer(),
     );
-    const Placeholder();
   }
 }
+//1:26:30
